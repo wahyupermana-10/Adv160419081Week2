@@ -31,5 +31,10 @@ class MainFragment : Fragment() {
                 Navigation.findNavController(it).navigate(action)
             }
         }
+
+        btnOption.setOnClickListener {
+            val action = MainFragmentDirections.actionOptionFragment()
+            Navigation.findNavController(it).navigate(action)
+        }
     }
 }
